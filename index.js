@@ -5,9 +5,9 @@ document.getElementById("buttonA").onclick = function increaser() {
     numc.innerHTML= incrementNum;
 }
 
-let titleM = document.getElementById("title");
+
 function submit() {
-    titleM = titleM.value;
+    let titleM = document.getElementById("title").value;
     let yourNAme = document.getElementById("yourName").value;
     let ourAnswer = document.getElementById("answer");
     ourAnswer.innerHTML = "hello! " + titleM +". " + yourNAme;
