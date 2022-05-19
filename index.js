@@ -1,16 +1,9 @@
-let numc = document.getElementById("numberC");
-let incrementNum = 0;
-document.getElementById("buttonA").onclick = function increaser() {
-    incrementNum = incrementNum + 1;
-    numc.innerHTML= incrementNum;
-}
-
-
-function submit() {
-    let titleM = document.getElementById("title").value;
-    let yourNAme = document.getElementById("yourName").value;
+function calculate() {
+    let boxHeight = document.getElementById("height").value;
+    let boxWidth = document.getElementById("width").value;
+    let boxLength = document.getElementById("length").value;
     let ourAnswer = document.getElementById("answer");
-    ourAnswer.innerHTML = "hello! " + titleM +". " + yourNAme;
+    ourAnswer.innerHTML = boxHeight*boxLength*boxWidth/1000000;
 }
 
 
